@@ -8,3 +8,8 @@ services:
       POSTGRES_DB: task_manager
     ports:
       - "5432:5432"
+    volumes:
+      - task_manager_db:/var/lib/postgresql/data
+
+volumes:
+  task_manager_db:
